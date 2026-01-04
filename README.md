@@ -82,6 +82,4 @@ La app debe permitir ver eventos, buscar / filtrar, ver detalles y marcar favori
 
 ## Gestión de Favoritos
 
-![Evento Agregado a Favoritos](capturas/detalles%20evento%20agregado.png)
-
 ![Vista de Favoritos](capturas/favoritos.png)
