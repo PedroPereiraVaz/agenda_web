@@ -1,0 +1,143 @@
+:root {
+  /* Variables Globales */
+  --primary-color: hsla(235, 70%, 71%, 0.431);
+  --primary-hover: #d5e9b5;
+  --bg-color: #242424;
+  --bg-second: #474747cb;
+  --text-color: rgba(255, 255, 255, 0.87);
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* Layout Principal */
+.app-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* a y button */
+a,
+button {
+  text-decoration: none;
+  color: var(--text-color);
+  font: inherit;
+  cursor: pointer;
+}
+button {
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+button:hover {
+  background-color: var(--primary-hover);
+  color: var(--bg-color);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-second);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+nav a {
+  padding: 0rem 2rem;
+  font-size: large;
+  font-weight: 600;
+  background: var(--bg-color);
+  border-radius: 18px;
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+}
+
+/* Tabla */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, sans-serif;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: var(--bg-second);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-second);
+}
+
+tr:hover {
+  background-color: #201111;
+}
+
+table a button {
+  margin: 0px 10px;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+input,
+select {
+  width: 400px;
+  padding: 0.6rem;
+  font: inherit;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+/* Hover */
+input:hover,
+select:hover {
+  border-color: var(--primary);
+}
+
+/* Detalles */
+.detalles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.descripcion {
+  padding: 2rem;
+  margin: 20px;
+  border: 2px solid var(--primary-hover);
+  border-radius: 18px;
+}
+
+/* Contador eventos */
+.contador {
+  justify-self: center;
+}
